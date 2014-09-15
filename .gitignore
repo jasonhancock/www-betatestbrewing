@@ -1,0 +1,5 @@
+output/
+*.pyc
+/.vagrant
+/bower_components
+/node_modules
