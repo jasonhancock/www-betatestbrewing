@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <title>Tools</title>
+        <meta name="author" content="Jason Hancock" />
+        <meta name="summary" content="Homebrewing tools and calculators - ABV, Apparent Attenuation, Calories" />
+        <meta name="javascript" content="/assets/js/tools.js" />
+    </head>
+    <body>
+
+        <h2>ABV, Apparent Attenuation, &amp; Calorie Calculator</h2>
+
+        <form class="form-horizontal" role="form">
+            <div class="form-group">
+                <label for="og" class="col-sm-2 control-label">OG</label>
+                <div class="col-sm-1" style="width: 130px">
+                    <input type="number" class="form-control" id="og" value="1.050" step=".001">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="fg" class="col-sm-2 control-label">FG</label>
+                <div class="col-sm-1" style="width: 130px">
+                    <input type="number" class="form-control" id="fg" value="1.010" step=".001">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="abv" class="col-sm-2 control-label">ABV</label>
+                <div class="col-sm-1" style="width: 130px">
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="abv" readonly>
+                        <div class="input-group-addon">%</div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="appatt" class="col-sm-2 control-label">Apparent Attenuation</label>
+                <div class="col-sm-1" style="width: 130px">
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="appatt" readonly>
+                        <div class="input-group-addon">%</div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="calories" class="col-sm-2 control-label">Calories per 12 Oz.</label>
+                <div class="col-sm-1" style="width: 130px">
+                    <input type="text" class="form-control" id="calories" readonly>
+                </div>
+            </div>
+        </form>
+
+    </body>
+</html>

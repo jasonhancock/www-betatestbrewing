@@ -26,6 +26,9 @@ FEED_ALL_RSS = 'feeds/all.rss.xml'
 CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 
+STATIC_PATHS = ['assets']
+
+
 # Blogroll
 LINKS =  (
     ('/r/Homebrewing', 'http://www.reddit.com/r/Homebrewing/'),
@@ -36,6 +39,7 @@ LINKS =  (
 SOCIAL = (
     ('twitter', 'https://twitter.com/jsnby'),
     ('untappd', 'https://untappd.com/BetaTestBrewing/'),
+    ('rss',     '/feeds/all.rss.xml'),
 )
 
 DEFAULT_PAGINATION = False
