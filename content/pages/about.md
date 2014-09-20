@@ -33,8 +33,8 @@ operation outside, so I purchased a natural gas burner. Then, I built a counter 
 chiller because I found my immersion chiller wasn't cutting it. I then added a pump,
 camlocks, grain mill, and finally built a brew stand.
 
-I started entering competitions and have had some success. See the awards page for
-more details.
+I started entering competitions and have had some success. See the
+[awards]({filename}/pages/awards.md) page for more details.
 
 I'm now in the midst of designing a ten gallon gas and electric HERMS system and
 one day dream about owning my own brewery (somewhere in the 7 to 15 BBL brewhouse

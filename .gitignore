@@ -1,5 +1,7 @@
-output/
 *.pyc
 /.vagrant
 /bower_components
+/content/assets/data/style-data.min.json
 /node_modules
+/output
+/themes/betatestbrewing/static

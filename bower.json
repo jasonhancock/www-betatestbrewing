@@ -1,0 +1,10 @@
+{
+  "name": "horsethiefbrewers.com",
+  "dependencies": {
+    "font-awesome": "~4.1.0",
+    "bootstrap": "~3.2.0",
+    "bjcp-style-data": "https://github.com/brewpuppy/bjcp-style-data.git#~1.2.0",
+    "bootstrap-switch": "~3.0.2",
+    "bootswatch": "~3.2.0+4"
+  }
+}
