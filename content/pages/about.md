@@ -9,10 +9,10 @@ brewery.
 Shortly after college one of my buddies got a homebrewing kit and started brewing
 occasionally. I thought it would be a lot of fun to try it myself, but never got
 around to taking the plunge. For Christmas 2012, I received a 1 gallon Brooklyn
-Brewshop all grain IPA kit from my wife and my mother-in-law purchased a five
-gallon extract IPA kit. With my birthday being in January, I quickly read up on
-what equipment I would need to make the five gallon batch and was able to
-acquire most of the gear.
+Brewshop all grain [IPA kit](http://amzn.to/1obOLOX) from my wife and my
+mother-in-law purchased a five gallon extract [IPA kit](http://amzn.to/1wDP1ez).
+With my birthday being in January, I quickly read up on what equipment I would
+need to make the five gallon batch and was able to acquire most of the gear.
 
 I brewed both kits. I really liked how even though the all grain one gallon kit was
 more work than the extract kit, it felt like I was a real brewer. I read up on all
