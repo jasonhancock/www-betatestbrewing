@@ -54,6 +54,12 @@ module.exports = function(grunt) {
       },
     },
 
+    exec: {
+      main: {
+        command: "make html",
+      }
+    },
+
     watch: {
       js_site: {
         files: [
@@ -76,6 +82,14 @@ module.exports = function(grunt) {
           './bower_components/font-awesome/fonts/*'
         ],
         tasks: ['copy']
+      },
+      exec: {
+        files: [
+            './content/assets/js/*.js',
+            './content/pages/*.*',
+            './content/**/**/*.*'
+        ],
+        tasks: ['exec'],
       }
     }
   });
@@ -86,6 +100,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-exec');
 
   grunt.registerTask('default', ['watch']);
   grunt.registerTask('all', ['less', 'concat', 'uglify', 'copy']);
