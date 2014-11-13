@@ -1,0 +1,106 @@
+<html>
+    <head>
+        <title>Continuous Hopping Calculator</title>
+        <meta name="author" content="Jason Hancock" />
+        <meta name="summary" content="Continuous Hopping Calculator" />
+        <meta name="javascript" content="/assets/js/continuous-hop.js" />
+        <meta name="status" content="hidden" />
+        <meta name="slug" content="continuous-hop" />
+    </head>
+    <body>
+
+        <form class="form-horizontal" role="form">
+            <div class="form-group">
+                <label for="og" class="col-sm-2 control-label">Post Boil Volume</label>
+                <div class="col-sm-1" style="width: 130px">
+                    <input type="number" class="form-control" id="volume" value="5.5" step=".1">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="fg" class="col-sm-2 control-label">Post Boil Gravity</label>
+                <div class="col-sm-1" style="width: 130px">
+                    <input type="number" class="form-control" id="gravity" value="1.050" step=".001">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="fg" class="col-sm-2 control-label">Boil Time (minutes)</label>
+                <div class="col-sm-1" style="width: 130px">
+                    <input type="number" class="form-control" id="time" value="60" step="1">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="fg" class="col-sm-2 control-label">Drops Per Minute</label>
+                <div class="col-sm-1" style="width: 130px">
+                    <input type="number" class="form-control" id="dpm" value="1" step=".1">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="calories" class="col-sm-2 control-label">Total IBU</label>
+                <div class="col-sm-1" style="width: 130px">
+                    <input type="text" class="form-control" id="ibu_total" readonly>
+                </div>
+            </div>
+        </form>
+
+        <div id="container-hops"></div>
+
+        <div class="btn-group pull-right" style="margin-bottom: 20px">
+            <button class="btn btn-primary" id="btn-add-hops"><i class="fa fa-plus"></i> Add Hops</button>
+            <button class="btn btn-primary" id="btn-compute"><i class="fa fa-refresh"></i> Compute</button>
+        </div>
+
+        <div id="results" style="clear: both; margin-top: 20px"></div>
+
+<script id="template-row-hop" type="text/x-handlebars-template">
+    <div class="well" data-type="hops">
+        <label for="name">Name:</label>
+        <input data-type="name" type="text" placeholder="Cascade" size="20" />
+
+        <label for="amount">Amount (Oz.):</label>
+        <input data-type="amount" type="number" placeholder="1" min="0" step=".1" size="4" style="width: 60px" />
+
+        <label for="alpha_acid">Alpha Acid (%):</label>
+        <input data-type="alpha-acid" type="number" placeholder="5.5" min="0" step=".1" size="4" style="width: 60px" />
+
+        <button class="btn btn-danger btn-sm pull-right"><i class="fa fa-times"></i> Remove</button>
+    </div>
+</script>
+
+<script id="template-row-results" type="text/x-handlebars-template">
+    <table class="table table-bordered table-condensed">
+        <thead>
+            <tr>
+                <th>Drop</th>
+                <th>Time (MM:SS)</th>
+                <th>Hops</th>
+                <th>Amount (Oz.)</th>
+                <th>IBUs</th>
+                <th>Total IBUs</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each drops}}
+                {{#each hops}}
+                <tr>
+                    {{#if @first}}
+                        <td rowspan="{{ ../../hops.length }}">{{ ../../count }}</td>
+                        <td rowspan="{{ ../../hops.length }}">{{minutesDecimal ../../boil_time }}</td>
+                    {{/if}}
+                    <td>{{ name }}</td>
+                    <td>{{toFixed amount}}</td>
+                    <td>{{toFixed ibus}}</td>
+                    {{#if @first}}
+                        <td rowspan="{{ ../../hops.length }}">{{toFixed ../../ibus}}</td>
+                    {{/if}}
+                </tr>
+                {{/each}}
+            {{/each}}
+        </tbody>
+    </table>
+</script>
+
+    </body>
+</html>
+
+
+
