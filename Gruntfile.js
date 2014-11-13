@@ -17,7 +17,8 @@ module.exports = function(grunt) {
         src: [
           './bower_components/jquery/dist/jquery.js',
           './bower_components/bootstrap/dist/js/bootstrap.js',
-          './bower_components/bootstrap-switch/dist/js/bootstrap-switch.js'
+          './bower_components/bootstrap-switch/dist/js/bootstrap-switch.js',
+          './bower_components/handlebars/handlebars.js'
         ],
         dest: '<%= themeDir %>/js/site.min.js',
       },
@@ -65,7 +66,8 @@ module.exports = function(grunt) {
         files: [
           './bower_components/jquery/jquery.js',
           './bower_components/bootstrap/dist/js/bootstrap.js',
-          './bower_components/bootstrap-switch/dist/js/bootstrap-switch.js'
+          './bower_components/bootstrap-switch/dist/js/bootstrap-switch.js',
+          './bower_components/handlebars/handlebars.js'
         ],
         tasks: ['concat:js_site', 'uglify:site']
       },
