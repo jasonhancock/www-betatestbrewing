@@ -19,3 +19,6 @@ You will need a way of weighing your grain. I use [this](http://amzn.to/1uE7Xbq)
 scale. I use [this](http://amzn.to/Zc6BeS) scoop (stored inside one of the
 buckets of grain) to transfer grain from the storage bucket into the bucket I'm
 using to weigh the grain.
+
+[![Stacked Buckets](/assets/images/2014/11/buckets/buckets_stacked_thumb.jpg)]({filename}/assets/images/2014/11/buckets/buckets_stacked.jpg)
+[![Inside Bucket](/assets/images/2014/11/buckets/bucket_inside_thumb.jpg)]({filename}/assets/images/2014/11/buckets/bucket_inside.jpg)
