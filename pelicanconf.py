@@ -22,6 +22,9 @@ DEFAULT_LANG = u'en'
 
 DISPLAY_CATEGORIES_ON_MENU = False
 
+OPEN_GRAPH_FB_APP_ID = 1744077079150259
+DEFAULT_FB_PROFILE = 'https://www.facebook.com/jsnby'
+
 # Feed generation is usually not desired when developing
 FEED_MAX_ITEMS = 5
 FEED_DOMAIN = SITEURL

@@ -29,10 +29,10 @@
         {% for tag in article.tags %}
             <meta property="article:tag" content="{{ tag }}" />
         {% endfor %}
-        {% if article.author %}
-            <meta property="article:author" content="{{ article.author }}" />
-        {% elif AUTHOR %}
-            <meta property="article:author" content="{{ AUTHOR }}" />
+        {% if article.profile %}
+            <meta property="article:author" content="{{ article.profile }}" />
+        {% elif DEFAULT_FB_PROFILE %}
+            <meta property="article:author" content="{{ DEFAULT_FB_PROFILE }}" />
         {% endif %}
         {% if article.og_image %}
             <meta property="og:image"
