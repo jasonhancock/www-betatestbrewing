@@ -50,7 +50,9 @@ PLUGINS = ['thumbnailer']
 IMAGE_PATH = 'assets/images'
 THUMBNAIL_DIR = 'assets/images'
 THUMBNAIL_SIZES = {
-    'thumb': '250x?'
+    'thumb': '250x?',
+    'fb1'  : '200x?',
+    'fb2'  : '?x200'
 }
 
 TOOLS =  (
