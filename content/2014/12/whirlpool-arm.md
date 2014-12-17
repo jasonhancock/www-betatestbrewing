@@ -3,7 +3,7 @@ Date: 2014-12-06 19:00
 Slug: whirlpool-arm
 Author: Jason Hancock
 Tags: equipment, DIY
-Og_image: assets/images/2014/12/whirlpool/finished_thumb.jpg
+Og_image: assets/images/2014/12/whirlpool/finished_fb2.jpg
 
 I like to whirlpool my wort to help drop the solids out of suspension into a nice cone in the center of the kettle. I used to simply clamp a piece of 1/2" ID silicone hose and do my best to position it so that I could get a nice whirlpool going, but I wanted something better. My kettle has a 1/2" NPT port for a thermometer that I don't use, so I considered rigging something though that port, but I didn't like that idea. Instead, I wanted to add a whirlpool arm that I could somehow clamp to the side of the kettle.
 
