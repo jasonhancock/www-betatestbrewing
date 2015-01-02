@@ -5,7 +5,7 @@ Author: Jason Hancock
 Tags: planning, brewyear
 
 2015 is here! I like to create goals so that I have something to work towards.
-For 2015, I'm goign to declare some Brew Year's resolutions:
+For 2015, I'm going to declare some Brew Year's resolutions:
 
 * Water Chemistry: I'd like to learn more about how water chemistry affects my
 brewing. I'm going to start by reading [Water](http://amzn.to/1xayId0) from the
