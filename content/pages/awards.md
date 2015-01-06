@@ -1,5 +1,4 @@
 Title: Awards
-Date: 2014-09-15 15:30
 Author: Jason Hancock
 Summary: Award Winning Beers From Beta Test Brewing Company
 

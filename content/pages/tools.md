@@ -1,5 +1,4 @@
-Title: Tools 
-Date: 2014-09-15 15:30
+Title: Tools
 Author: Jason Hancock
 Summary: Homebrewing tools and calculators
 

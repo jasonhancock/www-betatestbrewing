@@ -1,5 +1,4 @@
 Title: About
-Date: 2014-09-15 15:30
 Author: Jason Hancock
 Summary: About Beta Test Brewing Company
 

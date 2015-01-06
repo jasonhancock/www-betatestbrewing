@@ -1,5 +1,4 @@
 Title: Disclaimer
-Date: 2014-09-19 16:00
 Author: Jason Hancock
 Summary: Disclaimer
 Status: hidden

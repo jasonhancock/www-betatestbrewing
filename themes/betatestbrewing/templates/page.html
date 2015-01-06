@@ -47,6 +47,24 @@
 {% block content %}
     <section id="content" class="body">
         <h1 class="entry-title">{{ page.title }}</h1>
+        {% if page.date %}
+        <div class="panel">
+            <div class="panel-body">
+                <footer class="post-info">
+                    <span class="label label-default">Last Update:</span>
+                    <span class="published">
+                        <i class="fa fa-calendar"></i> {{ page.date }}
+                    </span>
+                    {% if SHOW_ARTICLE_AUTHOR %}
+                        {% if page.author %}
+                            <span class="label label-default">By</span>
+                            <a href="{{ SITEURL }}/{{ page.author.url }}">{{ page.author }}</a>
+                        {% endif %}
+                    {% endif %}
+                </footer>
+            </div>
+        </div>
+        {% endif %}
         {% import 'includes/translations.html' as translations with context %}
         {{ translations.translations_for(page) }}
         {% if PDF_PROCESSOR %}
