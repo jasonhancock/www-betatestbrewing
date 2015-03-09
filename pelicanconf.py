@@ -74,7 +74,7 @@ LINKS =  (
 SOCIAL = (
     ('twitter', 'https://twitter.com/jsnby'),
     ('rss',     '/feeds/all.rss.xml'),
-    ('untappd', 'https://untappd.com/BetaTestBrewing/'),
+    ('untappd', 'https://untappd.com/BetaTestBrewing?ref=followbtn'),
 )
 
 
