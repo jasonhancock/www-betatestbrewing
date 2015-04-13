@@ -57,8 +57,9 @@ THUMBNAIL_SIZES = {
 
 TOOLS =  (
     ('ABV Calculator', '/pages/abv.html'),
-    ('Random BJCP Style', '/pages/random.html'),
     ('Continuous Hop Calculator', '/pages/continuous-hop.html'),
+    ('Keg Carbonation Calculator', '/pages/kegcarb.html'),
+    ('Random BJCP Style', '/pages/random.html'),
 )
 
 

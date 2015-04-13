@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>Kegging Carbonation Calculator</title>
+        <meta name="author" content="Jason Hancock" />
+        <meta name="summary" content="Homebrewing tools and calculators - Kegging Carbonation Calculator" />
+        <meta name="javascript" content="/assets/js/kegcarb.js" />
+        <meta name="status" content="hidden" />
+        <meta name="slug" content="kegcarb" />
+    </head>
+    <body>
+
+        <form class="form-horizontal" role="form">
+            <div class="form-group">
+                <label for="vols" class="col-sm-3 control-label">Volumes of C0<sub>2</sub></label>
+                <div class="col-sm-1" style="width: 130px">
+                    <input type="number" class="form-control" id="vols" value="2.4" step=".1">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="temp" class="col-sm-3 control-label">Degrees Farhenheit</label>
+                <div class="col-sm-1" style="width: 130px">
+                    <input type="number" class="form-control" id="temp" value="38" step=".1">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="psi" class="col-sm-3 control-label">Regulator PSI Setting</label>
+                <div class="col-sm-1" style="width: 130px">
+                    <input type="text" class="form-control" id="psi" readonly>
+                </div>
+            </div>
+        </form>
+
+        <p>Given the target temperature of the beer and the desired carbonation
+        level in volumes of C0<sub>2</sub>, this calculator determines the
+        pressure (in PSI) that you should set your regulator to. Based on the
+        equation provided in
+        <a href="http://hbd.org/hbd/archive/2788.html#2788-8" target="_blank">this email thread</a>.
+        </p>
+
+    </body>
+</html>
