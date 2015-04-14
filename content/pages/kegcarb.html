@@ -11,7 +11,7 @@
 
         <form class="form-horizontal" role="form">
             <div class="form-group">
-                <label for="vols" class="col-sm-3 control-label">Volumes of C0<sub>2</sub></label>
+                <label for="vols" class="col-sm-3 control-label">Volumes of CO<sub>2</sub></label>
                 <div class="col-sm-1" style="width: 130px">
                     <input type="number" class="form-control" id="vols" value="2.4" step=".1">
                 </div>
@@ -31,11 +31,15 @@
         </form>
 
         <p>Given the target temperature of the beer and the desired carbonation
-        level in volumes of C0<sub>2</sub>, this calculator determines the
+        level in volumes of CO<sub>2</sub>, this calculator determines the
         pressure (in PSI) that you should set your regulator to. Based on the
         equation provided in
         <a href="http://hbd.org/hbd/archive/2788.html#2788-8" target="_blank">this email thread</a>.
         </p>
+
+        <p style="margin-top: 20px; margin-bottom: 20px">A table of various temperatures and volumes of CO<sub>2</sub>:</p>
+
+        <div id="psi-table"></div>
 
     </body>
 </html>
