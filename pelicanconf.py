@@ -33,6 +33,8 @@ FEED_ALL_RSS = 'feeds/all.rss.xml'
 CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 
+DEFAULT_PAGINATION = 5
+
 STATIC_PATHS = [
     'assets',
     'extra/robots.txt',
