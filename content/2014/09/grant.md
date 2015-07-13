@@ -3,6 +3,7 @@ Date: 2014-09-19 15:30
 Slug: grant
 Author: Jason Hancock
 Tags: equipment, DIY
+Status: draft
 
 I'm in the process of rebuilding my home brewery and moving from a five gallon Rubbermaid cooler based system to a ten gallon, all stainless, HERMS system.
 
