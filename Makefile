@@ -54,7 +54,7 @@ help:
 
 deps:
 	npm install
-	bower --config.interactive=false install
+	bower --allow-root --config.interactive=false install
 
 assets:
 	grunt all
