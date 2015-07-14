@@ -53,6 +53,8 @@ help:
 	@echo '                                                                       '
 
 deps:
+	git submodule init
+	git submodule update
 	npm install
 	bower --allow-root --config.interactive=false install
 
