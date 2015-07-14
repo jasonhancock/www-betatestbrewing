@@ -1,4 +1,3 @@
-#%define _topdir %(echo $PWD)/rpmbuild
 Summary:        betatestbrewing.com Static website
 Name:           www-betatestbrewing
 Version:        %{version}
