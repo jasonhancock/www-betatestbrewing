@@ -11,6 +11,8 @@ all: clean
 	@(mkdir rpmbuild && cd rpmbuild && mkdir SRPMS BUILD RPMS SOURCES SPECS tmp)
 	@(rsync -av ../output/ rpmbuild/SOURCES/$(pkg)-$(version))
 	@(cd rpmbuild/SOURCES && tar -cvzf $(pkg)-$(version).tar.gz $(pkg)-$(version)/)
+	# Avoid "Bad owner/group" error on source tarball
+	cd rpmbuild/SOURCES && chown $(shell whoami).$(shell id -G -n) $(pkg)-$(version).tar.gz
 	cp redhat/$(pkg).spec rpmbuild/SPECS/
 	rpmbuild -bb --define "_topdir rpmbuild" --define "version $(version)" rpmbuild/SPECS/$(pkg).spec
 	cp rpmbuild/RPMS/noarch/$(pkg)-$(version)-1.noarch.rpm .
