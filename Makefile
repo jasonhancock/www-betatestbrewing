@@ -52,6 +52,10 @@ help:
 	@echo 'Set the DEBUG variable to 1 to enable debugging, e.g. make DEBUG=1 html'
 	@echo '                                                                       '
 
+deps:
+	npm install
+	bower --config.interactive=false install
+
 assets:
 	grunt all
 
@@ -109,4 +113,7 @@ github: publish
 	ghp-import $(OUTPUTDIR)
 	git push origin gh-pages
 
-.PHONY: html help clean regenerate serve devserver publish ssh_upload rsync_upload dropbox_upload ftp_upload s3_upload cf_upload github
+package: deps clean publish
+	$(MAKE) -C packaging
+
+.PHONY: html help clean regenerate serve devserver publish ssh_upload rsync_upload dropbox_upload ftp_upload s3_upload cf_upload github package
