@@ -1,4 +1,4 @@
-Title: Finsihed my HERMS build
+Title: Finished my HERMS build
 Date: 2015-07-27 23:00
 Slug: 2015/07/herms
 Author: Jason Hancock
