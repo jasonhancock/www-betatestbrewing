@@ -1,11 +1,11 @@
 module.exports = function(grunt) {
   grunt.initConfig({
 
-    themeDir: "themes/betatestbrewing/static",
+    themeDir: "themes/betatestbrewing",
 
     clean: {
       assets: {
-        src:['<%= themeDir %>'],
+        src:['<%= themeDir %>/static'],
       },
     },
 
@@ -18,9 +18,10 @@ module.exports = function(grunt) {
           './bower_components/jquery/dist/jquery.js',
           './bower_components/bootstrap/dist/js/bootstrap.js',
           './bower_components/bootstrap-switch/dist/js/bootstrap-switch.js',
-          './bower_components/handlebars/handlebars.js'
+          './bower_components/handlebars/handlebars.js',
+          '<%= themeDir %>/js/site.js'
         ],
-        dest: '<%= themeDir %>/js/site.min.js',
+        dest: '<%= themeDir %>/static/js/site.min.js',
       },
     },
 
@@ -30,7 +31,7 @@ module.exports = function(grunt) {
           compress: true
         },
         files: {
-          "<%= themeDir %>/stylesheets/site.min.css": "./themes/betatestbrewing/less/site.less"
+          "<%= themeDir %>/static/stylesheets/site.min.css": "<%= themeDir %>/less/site.less"
         },
       },
     },
@@ -38,7 +39,7 @@ module.exports = function(grunt) {
     copy: {
       main: {
         files: [
-          {expand: true, flatten: true, src: ['./bower_components/font-awesome/fonts/*'], dest: '<%= themeDir %>/fonts', filter: 'isFile'},
+          {expand: true, flatten: true, src: ['./bower_components/font-awesome/fonts/*'], dest: '<%= themeDir %>/static/fonts', filter: 'isFile'},
           {src: ['./bower_components/bjcp-style-data/json/style-data.min.json'], dest: './content/assets/data/style-data.min.json' }
         ]
       },
@@ -50,7 +51,7 @@ module.exports = function(grunt) {
       },
       site: {
         files: {
-          '<%= themeDir %>/js/site.min.js': '<%= themeDir %>/js/site.min.js'
+          '<%= themeDir %>/static/js/site.min.js': '<%= themeDir %>/static/js/site.min.js'
         },
       },
     },
@@ -67,13 +68,14 @@ module.exports = function(grunt) {
           './bower_components/jquery/jquery.js',
           './bower_components/bootstrap/dist/js/bootstrap.js',
           './bower_components/bootstrap-switch/dist/js/bootstrap-switch.js',
-          './bower_components/handlebars/handlebars.js'
+          './bower_components/handlebars/handlebars.js',
+          '<%= themeDir %>/js/site.js'
         ],
         tasks: ['concat:js_site', 'uglify:site']
       },
       less: {
         files: [
-          './themes/betatestbrewing/less/*.less',
+          '<%= themeDir %>/less/*.less',
           './bower_components/bootstrap/less/*.less',
           './bower_components/font-awesome/less/*.less'
         ],
