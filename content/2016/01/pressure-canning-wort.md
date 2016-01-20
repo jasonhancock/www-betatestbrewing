@@ -1,5 +1,5 @@
 Title: Pressure Canning Starter Wort
-Date: 2016-01-17 23:00
+Date: 2016-01-19 21:30
 Slug: 2016/01/pressure-canning-starter-wort
 Author: Jason Hancock
 Tags: starter, equipment, techniques
