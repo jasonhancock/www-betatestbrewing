@@ -16,9 +16,6 @@ function runCalcs() {
     var gravity_result = gravity_to_plato(gravity);
     var plato_result = plato_to_gravity(plato);
 
-    console.log(gravity_result);
-    console.log(plato_result);
-
     $('#gravity_result').val(gravity_result.toFixed(1));
     $('#plato_result').val(plato_result.toFixed(3));
 }
