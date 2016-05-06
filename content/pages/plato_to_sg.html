@@ -6,10 +6,17 @@
         <meta name="javascript" content="/assets/js/plato_sg.js" />
         <meta name="status" content="hidden" />
         <meta name="slug" content="plato_to_sg" />
+
+
+
     </head>
     <body>
 
         <h2>Specific Gravity to Degrees Plato</h2>
+        $$
+        plato = 135.997gravity^3 - 630.272gravity^2 + 1111.14gravity - 616.868
+        $$
+
         <form class="form-horizontal" role="form">
             <div class="form-group">
                 <label for="gravity" class="col-sm-2 control-label">Gravity</label>
@@ -28,6 +35,11 @@
         <hr>
 
         <h2>Degrees Plato to Specific Gravity</h2>
+        <div align="left">
+        $$
+        gravity = 1 + \frac{plato}{258.6 - 227.1 \frac{plato}{258.2} }
+        $$
+    </div>
         <form class="form-horizontal" role="form">
             <div class="form-group">
                 <label for="plato" class="col-sm-2 control-label">Degrees Plato</label>
@@ -42,6 +54,16 @@
                 </div>
             </div>
         </form>
+        <script type="text/javascript">
+            window.MathJax = {
+                tex2jax: {
+                    inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+                    processEscapes: true
+                }
+            };
+        </script>
+        <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML">
+        </script>
 
     </body>
 </html>
