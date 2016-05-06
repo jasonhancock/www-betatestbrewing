@@ -61,6 +61,7 @@ TOOLS =  (
     ('ABV Calculator', '/pages/abv.html'),
     ('Continuous Hop Calculator', '/pages/continuous-hop.html'),
     ('Keg Carbonation Calculator', '/pages/kegcarb.html'),
+    ('Plato to SG Calculator', '/pages/plato_to_sg.html'),
     ('Random BJCP Style', '/pages/random.html'),
 )
 

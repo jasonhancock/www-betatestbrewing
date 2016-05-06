@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>Plato to SG (Specific Gravity) Calculator</title>
+        <meta name="author" content="Jason Hancock" />
+        <meta name="summary" content="Homebrewing tools and calculators - Degrees Plato to Specific Gravity Calculator" />
+        <meta name="javascript" content="/assets/js/plato_sg.js" />
+        <meta name="status" content="hidden" />
+        <meta name="slug" content="plato_to_sg" />
+    </head>
+    <body>
+
+        <h2>Specific Gravity to Degrees Plato</h2>
+        <form class="form-horizontal" role="form">
+            <div class="form-group">
+                <label for="gravity" class="col-sm-2 control-label">Gravity</label>
+                <div class="col-sm-1" style="width: 130px">
+                    <input type="number" class="form-control" id="gravity" value="1.050" step=".001">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="gravity_result" class="col-sm-2 control-label">Degrees Plato</label>
+                <div class="col-sm-1" style="width: 130px">
+                    <input type="text" class="form-control" id="gravity_result" readonly>
+                </div>
+            </div>
+        </form>
+
+        <hr>
+
+        <h2>Degrees Plato to Specific Gravity</h2>
+        <form class="form-horizontal" role="form">
+            <div class="form-group">
+                <label for="plato" class="col-sm-2 control-label">Degrees Plato</label>
+                <div class="col-sm-1" style="width: 130px">
+                    <input type="number" class="form-control" id="plato" value="15.0" step=".1">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="plato_result" class="col-sm-2 control-label">Gravity</label>
+                <div class="col-sm-1" style="width: 130px">
+                    <input type="text" class="form-control" id="plato_result" readonly>
+                </div>
+            </div>
+        </form>
+
+    </body>
+</html>
