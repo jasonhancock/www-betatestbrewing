@@ -7,6 +7,7 @@ $(function() {
     });
 
     runCalcs();
+    buildTable();
 });
 
 function runCalcs() {
@@ -27,3 +28,22 @@ function gravity_to_plato(gravity) {
 function plato_to_gravity(plato) {
     return 1 + (plato / (258.6 - ((plato/258.2) *227.1)));
 }
+
+function buildTable() {
+    var start = .5;
+    var end  = 40;
+    var step = .5;
+
+    var html = '<table class="table table-condensed table-nonfluid" style="font-size: .8em; text-align: center">';
+
+    html += '<tr><th style="text-align: center" colspan="2">Plato To Gravity Conversion Table</th></tr>';
+    html += '<tr><th>Plato (&deg;P)</th><th>SG</th></tr>';
+
+    for(p=start; p<=end; p+=step) {
+        html += '<tr><td>' + p.toFixed(1) + '</td><td>' + plato_to_gravity(p).toFixed(3) + '</td></tr>';
+    }
+
+    html += '</table>';
+    $('#conversion-table').html(html);
+}
+
