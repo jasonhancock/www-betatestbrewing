@@ -6,3 +6,4 @@ nodejs-legacy
 npm
 git
 libxml-libxml-perl
+libjson-perl
