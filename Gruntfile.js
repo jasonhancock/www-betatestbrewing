@@ -39,8 +39,7 @@ module.exports = function(grunt) {
     copy: {
       main: {
         files: [
-          {expand: true, flatten: true, src: ['./bower_components/font-awesome/fonts/*'], dest: '<%= themeDir %>/static/fonts', filter: 'isFile'},
-          {src: ['./bower_components/bjcp-style-data/json/style-data.min.json'], dest: './content/assets/data/style-data.min.json' }
+          {expand: true, flatten: true, src: ['./bower_components/font-awesome/fonts/*'], dest: '<%= themeDir %>/static/fonts', filter: 'isFile'}
         ]
       },
     },
@@ -59,6 +58,9 @@ module.exports = function(grunt) {
     exec: {
       main: {
         command: "make html",
+      },
+      bjcp_data: {
+        command: "./parse_bjcp_xml.pl ./content/assets/data/style-data.min.json",
       }
     },
 
@@ -107,5 +109,5 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-exec');
 
   grunt.registerTask('default', ['watch']);
-  grunt.registerTask('all', ['less', 'concat', 'uglify', 'copy']);
+  grunt.registerTask('all', ['less', 'concat', 'uglify', 'copy', 'exec:bjcp_data']);
 };

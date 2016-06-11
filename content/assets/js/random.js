@@ -14,15 +14,9 @@ $(function() {
     }).done(function(data) {
         globaldata = data;
 
-        $.each(data.Beer, function( index, value ) {
-            if(value.subcategory) {
-                $.each(value.subcategory, function(sub_index, sub_value) {
-
-                    styles.push(value.number + sub_value.letter + ' - ' + sub_value.name);
-
-                });
-            } else {
-                styles.push(value.number + ' - ' + value.name);
+        $.each(data, function( index, value ) {
+            if(value.type == "beer") {
+                styles.push(value);
             }
         });
         pick_random();
@@ -35,5 +29,11 @@ $(function() {
 
 function pick_random() {
     var item = styles[Math.floor(Math.random()*styles.length)];
-    $('#results').html(item);
+    $('#results').html(item.number + item.letter + ' - ' + item.name);
+    $('#style').show();
+    $('#aroma').html(item['guidelines']['aroma']);
+    $('#appearance').html(item['guidelines']['appearance']);
+    $('#flavor').html(item['guidelines']['flavor']);
+    $('#mouthfeel').html(item['guidelines']['mouthfeel']);
+    $('#overall').html(item['guidelines']['overall']);
 }
