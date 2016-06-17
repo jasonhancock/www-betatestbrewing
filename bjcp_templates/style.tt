@@ -2,7 +2,7 @@ Title: BJCP Style [% o.number %][% o.letter %] - [% o.name %]
 Author: Jason Hancock
 Summary: BJCP Style [% o.number %][% o.letter %] - [% o.name %]
 Status: hidden
-Slug: bjcp/styles/[% o.number %][% o.letter %]
+Slug: bjcp/styles/[% o.number FILTER lower %][% o.letter FILTER lower %]
 
 
 #### Tags
