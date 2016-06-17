@@ -23,3 +23,11 @@ su -l -c 'pushd /vagrant && npm install' vagrant
 su -l -c 'pushd /vagrant && bower --config.interactive=false install' vagrant
 #su -l -c 'pushd /vagrant && grunt clean all' vagrant
 
+cd /tmp
+wget https://cpan.metacpan.org/authors/id/G/GR/GRANTM/Encoding-FixLatin-1.04.tar.gz
+tar -xvzf Encoding-FixLatin-1.04.tar.gz
+cd Encoding-FixLatin-1.04
+perl Makefile.PL
+make
+make install
+

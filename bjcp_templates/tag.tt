@@ -1,0 +1,12 @@
+Title: BJCP Styles Tagged With [% tag %]
+Author: Jason Hancock
+Summary: BJCP Styles Tagged With [% tag %]
+Status: hidden
+Slug: bjcp/tags/[% tag %]
+
+[% USE Dumper %]
+
+
+[% FOREACH o IN data %]
+* [[% o.name %] ([% o.number %][% o.letter %])]([% o.url %])
+[% END %]

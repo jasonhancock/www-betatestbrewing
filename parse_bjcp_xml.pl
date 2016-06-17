@@ -17,6 +17,9 @@ close $fh;
 my @styles;
 
 my $include_guidelines = 1;
+my $include_tags = 1;
+
+my %observed_tags;
 
 foreach my $class ($doc->findnodes('/styleguide/class')) {
 
@@ -53,6 +56,20 @@ foreach my $class ($doc->findnodes('/styleguide/class')) {
                 $$style{guidelines}{mouthfeel}  = trim($subcat->findnodes('./mouthfeel')->to_literal . '');
             }
 
+            if($include_tags) {
+                my @tags;
+                my $t = trim($subcat->findnodes('./tags')->to_literal . '');
+                # <tags>standard-strength, pale-color, bottom-fermented, lagered, central-europe, traditional-style, pale-lager-family, balanced</tags>
+                my @pieces = split(',', $t);
+                foreach my $p(@pieces) {
+                    $p = trim($p);
+                    push(@tags, $p);
+                    $observed_tags{$p} = 1;
+                }
+
+                $$style{tags} = \@tags;
+            }
+
             push(@styles, $style);
         }
     }
@@ -62,4 +79,8 @@ open OUT, ">$outfile" or die("Can't open $outfile");
 print OUT encode_json(\@styles);
 close OUT;
 
-sub  trim { my $s = shift; $s =~ s/^\s+|\s+$//g; return $s }
+sub  trim {
+    my $s = shift;
+    $s =~ s/^\s+|\s+$//g;
+    return $s;
+}

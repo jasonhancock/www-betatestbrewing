@@ -36,4 +36,10 @@ function pick_random() {
     $('#flavor').html(item['guidelines']['flavor']);
     $('#mouthfeel').html(item['guidelines']['mouthfeel']);
     $('#overall').html(item['guidelines']['overall']);
+
+    var t = [];
+    $.each(item.tags.sort(), function(index, value) {
+        t.push('<a href="/pages/bjcp/tags/' + value + '.html"><span class="label label-primary">' + value + '</span></a>');
+    });
+    $('#tags').html(t.join(' '));
 }

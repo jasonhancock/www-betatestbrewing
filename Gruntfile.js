@@ -61,6 +61,9 @@ module.exports = function(grunt) {
       },
       bjcp_data: {
         command: "./parse_bjcp_xml.pl ./content/assets/data/style-data.min.json",
+      },
+      bjcp_content: {
+        command: "./build_bjcp_content.pl content/assets/data/style-data.min.json content/pages/bjcp",
       }
     },
 
@@ -109,5 +112,5 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-exec');
 
   grunt.registerTask('default', ['watch']);
-  grunt.registerTask('all', ['less', 'concat', 'uglify', 'copy', 'exec:bjcp_data']);
+  grunt.registerTask('all', ['less', 'concat', 'uglify', 'copy', 'exec:bjcp_data', 'exec:bjcp_content']);
 };

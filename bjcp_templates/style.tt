@@ -1,0 +1,32 @@
+Title: BJCP Style [% o.number %][% o.letter %] - [% o.name %]
+Author: Jason Hancock
+Summary: BJCP Style [% o.number %][% o.letter %] - [% o.name %]
+Status: hidden
+Slug: bjcp/styles/[% o.number %][% o.letter %]
+
+
+#### Tags
+
+[%- FOREACH t IN o.tags -%]
+<a href="/pages/bjcp/tags/[% t %].html"><span class="label label-primary">[% t %]</span></a>&nbsp;
+[%- END -%]
+
+#### Aroma
+
+[% o.guidelines.aroma %]
+
+#### Appearance
+
+[% o.guidelines.appearance %]
+
+#### Flavor
+
+[% o.guidelines.flavor %]
+
+#### Mouthfeel
+
+[% o.guidelines.mouthfeel %]
+
+#### Overall
+
+[% o.guidelines.overall %]
