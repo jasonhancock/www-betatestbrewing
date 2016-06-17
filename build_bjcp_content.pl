@@ -78,6 +78,22 @@ foreach my $tag(sort keys %tags) {
     close OUT;
 }
 
+my $template = Template->new({
+    INCLUDE_PATH => ['./bjcp_templates'],
+    ENCODING => 'latin-1',
+});
+
+my $file = "$dir/styles/index.md";
+open OUT, ">$file" or die("Can't open $file for output");
+
+$template->process(
+   'style_index.tt',
+   {
+        styles => $styles,
+   },
+   \*OUT) || die "Template process failed: ", $template->error(), "\n";;
+close OUT;
+
 sub load_data {
     my ($file) = @_;
 

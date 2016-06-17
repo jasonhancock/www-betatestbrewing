@@ -63,6 +63,7 @@ TOOLS =  (
     ('Keg Carbonation Calculator', '/pages/kegcarb.html'),
     ('Plato to SG Calculator', '/pages/plato_to_sg.html'),
     ('Random BJCP Style', '/pages/random.html'),
+    ('2015 BJCP Style Guide', '/pages/bjcp/styles/'),
 )
 
 

@@ -1,0 +1,14 @@
+Title: 2015 BJCP Style Guidelines
+Author: Jason Hancock
+Summary: BJCP Style Guidelines
+Status: hidden
+Slug: bjcp/styles/index
+
+[% cat = '' %]
+[% FOREACH s IN styles %]
+[% IF s.category_name != cat -%]
+##### Category [% s.number %] - [% s.category_name %]
+[% cat = s.category_name -%]
+[% END -%]
+* [[% s.number %][% s.letter %] - [% s.name %]]([% s.url %])
+[%- END %]
