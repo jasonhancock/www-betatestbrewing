@@ -3,7 +3,6 @@ Date: 2016-07-29 23:30
 Slug: 2016/07/milestone-50-brews
 Author: Jason Hancock
 Tags: milestones
-Status: draft
 
 I brewed a batch of beer last weekend and hit an important milestone. I filled up my [brewing notebook]({filename}/2014/11/homebrew-logbook.md), which means that I now have fifty brews under my belt. My first entry is dated December 30, 2012, so I've done these 50 batches in a little over 3.5 years.
 
