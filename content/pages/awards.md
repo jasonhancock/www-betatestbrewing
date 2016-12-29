@@ -2,6 +2,10 @@ Title: Awards
 Author: Jason Hancock
 Summary: Award Winning Beers From Beta Test Brewing Company
 
+# 2016
+
+1st Place, Inland Empire Brewers Competition, Category 6, Amber Malty European Lager
+
 # 2014
 
 2nd Place, 1st Round, National Homebrew Competition, Category 10, American Pale Ale
